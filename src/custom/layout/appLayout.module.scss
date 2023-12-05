@@ -1,10 +1,17 @@
-.App {
-  text-align: center;
-}
+.container {
+  .header {
+    height: 80px;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  .outlet {
+    min-height: calc(100vh - 130px);
+    display: grid;
+    // align-content: center;
+  }
+
+  .footer {
+    height: 50px;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

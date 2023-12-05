@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: aquamarine;
+
+  .content {
+    .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    .detail {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #5f9ea0;
+
+    li {
+      display: inline-block;
+      flex-direction: column;
+      padding-right: 30px;
+
+      a {
+        text-decoration: none;
+        &:hover {
+          color: #48ae36;
+          background-color: #00383a;
+        }
+        &:visited {
+          color: white;
+        }
+      }
+    }
+  }
+}
