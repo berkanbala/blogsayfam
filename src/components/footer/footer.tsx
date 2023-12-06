@@ -4,9 +4,7 @@ export const Footer = (props: Props) => {
   const { className } = props;
 
   return (
-    <div className={classNames(className, styles.container)}>
-      © 2023 | Designed By Beerkaan
-    </div>
+    <div className={classNames(className, styles.container)}>| Beerkaan |</div>
   );
 };
 interface Props {

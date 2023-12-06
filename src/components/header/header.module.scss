@@ -2,9 +2,67 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // position: sticky;
-  // top: 0;
-  padding: 10px;
-  background-color: #3d414e;
+  // padding: 10px;
+  padding: 0 10px 10px 10px;
+  background-color: rgb(184 185 188 / 68%);
   color: #fff;
+
+  img {
+    display: grid;
+    // width: 75px;
+    // height: 77px;
+    width: 70px;
+    height: 60px;
+  }
+}
+
+.logo {
+  animation: loader 1.25s infinite;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  color: #00136c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    // rotate: 90deg;
+    // rotate: y 90deg;
+  }
+  &:focus {
+  }
+
+  // @keyframes loader {
+  //   0% {
+  //     rotate: 0deg;
+  //   }
+  //   100% {
+  //     border-radius: 50%;
+  //     rotate: 360deg;
+  //   }
+  // }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   height: inherit;
+  //   width: inherit;
+  //   background: radial-gradient(circle at center, transparent 25%, black 60%);
+  //   z-index: 10;
+  // }
+}
+
+// @media (prefers-reduced-motion: no-preference) {
+//   .logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

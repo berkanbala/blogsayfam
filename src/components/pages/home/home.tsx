@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import styles from "./home.module.scss";
+import PDF from "../resume.pdf";
 export const Home = () => {
   return (
     <div className={styles.container}>
@@ -12,37 +14,39 @@ export const Home = () => {
       <div className={styles.contact}>
         <ul>
           <li>
-            <a href="">cv</a>
+            <Link to={PDF} target="_blank">
+              cv
+            </Link>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/berkanbala" target="blank">
+            <Link to="https://www.linkedin.com/in/berkanbala" target="_blank">
               linkedin
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://github.com/berkanbala" target="blank">
+            <Link to="https://github.com/berkanbala" target="_blank">
               github
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://www.instagram.com/berkanbaala/" target="blank">
+            <Link to="https://www.instagram.com/berkanbaala/" target="_blank">
               instagram
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://twitter.com/berkanbaala" target="blank">
+            <Link to="https://twitter.com/berkanbaala" target="_blank">
               twiter
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://www.facebook.com/BrknBala.7" target="blank">
+            <Link to="https://www.facebook.com/BrknBala.7" target="_blank">
               facebook
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://www.twitch.tv/beerkaan" target="blank">
+            <Link to="https://www.twitch.tv/beerkaan" target="_blank">
               twitch
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
